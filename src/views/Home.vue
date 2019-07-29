@@ -20,7 +20,7 @@
 
 import { Component, Vue, Watch } from 'vue-property-decorator';
 
-import { Scene, PerspectiveCamera, WebGLRenderer, BoxGeometry, MeshBasicMaterial, Mesh } from 'three';
+import { Scene, PerspectiveCamera, WebGLRenderer, BoxGeometry, Mesh, DirectionalLight, MeshPhongMaterial } from 'three';
 
 @Component({})
 export default class Home extends Vue {
@@ -29,6 +29,7 @@ export default class Home extends Vue {
   scene: any = {};
   camera: any = {};
   renderer: any = {};
+  light: any = {};
 
   @Watch('positionZ')
   onPositionZChange (val: number) {
@@ -40,25 +41,28 @@ export default class Home extends Vue {
 
     const scene = document.getElementById('scene');
   
-    const geometry = new BoxGeometry( 1, 2, 1, 3, 4, 5 );
-    const material = new MeshBasicMaterial({ color: 0x00ff00 });
+    const geometry = new BoxGeometry( 1, 2, 1);
+    const material = new MeshPhongMaterial({ color: 'gray' });
     const cube = new Mesh( geometry, material );
 
     if (scene) {
       this.scene = new Scene();
       this.camera = new PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-  
       this.renderer = new WebGLRenderer();
+      this.light = new DirectionalLight('#fff', 1);
+
       this.renderer.setSize( window.innerWidth * 0.6, window.innerHeight * 0.6 );
+      this.renderer.setClearColor('white');
   
-      scene.appendChild( this.renderer.domElement );
-  
-      this.scene.add(cube);
-  
-      this.renderer.setClearColor('red');
-  
+      this.light.position.set( -1, 2, 4 );
+
+      this.scene.add(this.light);
+ 
       this.camera.position.z = 5;
   
+      scene.appendChild( this.renderer.domElement );
+
+      this.scene.add(cube);
       const animate = () => {
         requestAnimationFrame( animate );
         cube.rotation.x += 0.01;
