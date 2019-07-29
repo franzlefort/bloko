@@ -1,16 +1,19 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from 'vue';
+import Vuex, { StoreOptions } from 'vuex';
 
-Vue.use(Vuex)
+import Environment from '../services/environment';
+import modules from './modules';
+import plugins from './plugins';
 
-export default new Vuex.Store({
+Vue.use(Vuex);
+
+const store: StoreOptions<any> = {
   state: {
-
+    version: '1.0.0',
   },
-  mutations: {
+  modules,
+  plugins,
+  strict: !Environment.isProduction,
+};
 
-  },
-  actions: {
-
-  }
-})
+export default new Vuex.Store(store);
