@@ -1,0 +1,14 @@
+/Users/user/bloko/api/blockoApi/blockoApi/bin/Debug/netcoreapp2.2/blockoApi.deps.json
+/Users/user/bloko/api/blockoApi/blockoApi/bin/Debug/netcoreapp2.2/blockoApi.runtimeconfig.json
+/Users/user/bloko/api/blockoApi/blockoApi/bin/Debug/netcoreapp2.2/blockoApi.runtimeconfig.dev.json
+/Users/user/bloko/api/blockoApi/blockoApi/bin/Debug/netcoreapp2.2/blockoApi.dll
+/Users/user/bloko/api/blockoApi/blockoApi/bin/Debug/netcoreapp2.2/blockoApi.pdb
+/Users/user/bloko/api/blockoApi/blockoApi/obj/Debug/netcoreapp2.2/blockoApi.csprojAssemblyReference.cache
+/Users/user/bloko/api/blockoApi/blockoApi/obj/Debug/netcoreapp2.2/blockoApi.csproj.CoreCompileInputs.cache
+/Users/user/bloko/api/blockoApi/blockoApi/obj/Debug/netcoreapp2.2/blockoApi.RazorAssemblyInfo.cache
+/Users/user/bloko/api/blockoApi/blockoApi/obj/Debug/netcoreapp2.2/blockoApi.RazorAssemblyInfo.cs
+/Users/user/bloko/api/blockoApi/blockoApi/obj/Debug/netcoreapp2.2/blockoApi.AssemblyInfoInputs.cache
+/Users/user/bloko/api/blockoApi/blockoApi/obj/Debug/netcoreapp2.2/blockoApi.AssemblyInfo.cs
+/Users/user/bloko/api/blockoApi/blockoApi/obj/Debug/netcoreapp2.2/blockoApi.RazorTargetAssemblyInfo.cache
+/Users/user/bloko/api/blockoApi/blockoApi/obj/Debug/netcoreapp2.2/blockoApi.dll
+/Users/user/bloko/api/blockoApi/blockoApi/obj/Debug/netcoreapp2.2/blockoApi.pdb
